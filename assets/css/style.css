@@ -1,0 +1,239 @@
+/* Ricardo Arévalo all rights reserved */
+/* V.1.0 - 2020 */
+:root {
+    --titles:'Ropa Sans', sans-serif;
+    --text: 'Barlow', sans-serif;
+    --colorKey: #121235;
+    --colorComp: #49F2A0;
+    --colorLight1: #B9B9FF;
+    --colorLight2: #E7FFF3;
+}
+
+/* LAYOUT */
+body {
+    font-family: var(--text);
+    font-size: 16px;
+    overflow-x: hidden;
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--titles);
+}
+
+h2 {
+    font-size: 30px;
+}
+a:hover {
+    text-decoration: none;
+}
+.generalContent {
+    padding-top: 50px;
+}
+.container-fluid {
+    max-width: 1450px;
+}
+.upperSpacer {
+    margin-top: 60px;
+}
+.lateralSpacer {
+    margin-left: 50px !important;
+}
+.articleSpacer {
+    height: 130px;
+    display: block;
+    width: 100%;
+}
+
+article,
+footer {
+    padding-left: 30px;
+}
+
+/* HEADER */
+.brand {
+    position: fixed;
+    height: 100vh;
+    display: block !important;
+}
+.ricardoText {
+    position: absolute;
+    bottom: 50px;
+    margin-left: 9px;
+}
+.description {
+    line-height: 19px;
+    max-width: 440px;
+    margin-top: 16px;
+}
+.socialLinks {
+    font-size: large;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: right;
+    margin-top: 15px;
+}
+.socialLinks a {
+    margin: 0 8px;
+    color: var(--colorKey);
+    transition: all .3s ease-in;
+}
+.socialLinks a:hover {
+    color: var(--colorLight1);
+}
+/* MENU */
+nav {
+    position: fixed;
+}
+.menu ul{
+    padding: 0 0 0 15px;
+    list-style: none;
+    font-size: 18px;
+}
+.menu ul li a {
+    font-family: var(--titles);
+    color: var(--colorKey);
+    transition: all .5s ease;
+}
+.menu ul li a:hover:after {
+    content: "-";
+    display: inline-block;
+    margin-left: 5px;
+    color: var(--colorComp);
+    font-size: 1.5em;
+    line-height: 0px;
+    vertical-align: middle;
+}
+/* UI COMPONENTS */
+/* Banner */
+.textBanner {
+    padding-top: 100px;
+    max-width: 488px;
+    /* padding-left: 0px; */
+}
+.textBanner h1 {
+    font-family: var(--text);
+    line-height: 42px;
+    font-size: 41px;
+    letter-spacing: 5px;
+}
+.imgBanner {
+    position: relative;
+    z-index: -1;
+    margin-left: -220px
+}
+.imgBanner img {
+    width: 89%;
+    max-height: 476px;
+}
+.imgBanner i{
+    position: absolute;
+    transform: rotate(-90deg);
+    
+    right: -22px;
+    top: 85px;
+    opacity: .7;
+    
+}
+
+/* Portfolio projects */
+.porfolioProjects h2 {
+    margin-bottom: 40px;
+}
+.porfolioProjects h2 small{
+ font-size: 18px;
+ font-family: var(--text)
+}
+.project {
+    padding: 20px;
+}
+.project img {
+margin-bottom: 30px;
+text-align: center;
+}
+.project p {
+    line-height: 20px;
+}
+/* Buttons */
+.primaryBtn {
+    padding: 10px 20px;
+    background: var(--colorComp);
+    border-radius: 4px;
+    color: var(--colorKey);
+    font-size: 18px;
+    margin: 40px 0 0 0;
+    display: inline-block;
+    border: 1px solid var(--colorComp);
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+}
+
+.secondaryBtn {
+    padding: 10px 20px;
+    background: var(--colorKey);
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    margin: 40px 0 0 0;
+    display: inline-block;
+    border: 1px solid var(--colorKey);
+    transition: all .5s ease-in-out;
+}
+.primaryBtn:hover,
+.secondaryBtn:hover {
+    background:white;
+    color: var(--colorKey);
+    text-decoration: none;
+    border: 1px dashed var(--colorKey);
+}
+
+/* Clients */
+
+.clients h2 {
+    margin-bottom: 40px;
+}
+.clients .imgLateral {
+    position: absolute;
+    margin: -300px 0 0 0;
+    right: -20px;
+}
+.clients ul {
+    max-width: 300px;
+}
+.clients ul li{
+    margin-bottom: 17px;
+    line-height: 21px;
+}
+
+/* Call to Action */
+.call .imgLateral {
+    position: absolute;
+    right: -20px;
+}
+.call h2 {
+    margin-top: 60px;
+    font-family: var(--text);
+    font-size: 51px;
+    line-height: 47px;
+    margin-left: 30px;
+}
+.call a{
+    margin-top: 90px;
+
+}
+
+/* Footer */
+footer {
+    padding-bottom: 40px;
+}
+.contactFooter {
+    font-size: 30px;
+    color: var(--colorKey);
+    clear: both;
+    display: table;
+    transition: all .5s ease-in-out;
+    font-weight: 500;
+}
+.contactFooter:hover {
+    color: var(--colorLight1);
+}
