@@ -82,9 +82,6 @@ footer {
     color: var(--colorLight1);
 }
 /* MENU */
-nav {
-    position: fixed;
-}
 .menu ul{
     padding: 0 0 0 15px;
     list-style: none;
