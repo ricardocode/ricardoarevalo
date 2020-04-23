@@ -82,14 +82,14 @@ footer {
     color: var(--colorLight1);
 }
 /* MENU */
-@keyframes example {
+@keyframes menuAnimate {
    0% {margin-top: 0px;}
   70% {margin-top: -120px;}
  100% {margin-top: -113px;}
 }
 .fixedMenu {
     position: fixed !important;
-    animation-name: example;
+    animation-name: menuAnimate;
     animation-duration: 2s;
     margin-top: -113px;
 }
