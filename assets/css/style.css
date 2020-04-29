@@ -26,6 +26,9 @@ h2 {
 a:hover {
     text-decoration: none;
 }
+.contentWrapper {
+    margin-top: -210px;
+}
 .generalContent {
     padding-top: 50px;
 }
@@ -47,6 +50,8 @@ a:hover {
 article,
 footer {
     padding-left: 30px;
+    display: block;
+    clear: both;
 }
 
 /* HEADER */
@@ -82,6 +87,10 @@ footer {
     color: var(--colorLight1);
 }
 /* MENU */
+nav.menu {
+    position: relative;
+    z-index: 5;
+}
 @keyframes menuAnimate {
    0% {margin-top: 0px;}
   70% {margin-top: -120px;}
@@ -92,10 +101,11 @@ footer {
     animation-name: menuAnimate;
     animation-duration: 2s;
     margin-top: -113px;
+    z-index: 5;
 }
 
 .menu ul{
-    padding: 0 0 0 15px;
+    padding: 0 0 0 0px;
     list-style: none;
     font-size: 18px;
 }
@@ -245,4 +255,21 @@ footer {
 }
 .contactFooter:hover {
     color: var(--colorLight1);
+}
+
+
+/* PORTAFOLIO */
+.projectsGroup {
+ clear: both;
+ display: table;
+}
+.itemProject {
+    width: 21%;
+    overflow: hidden;
+    border-radius: 4px;
+    height: 100%;
+    float: left;
+    margin: 10px;
+    max-width: 236px;
+    max-height: 427px;
 }
