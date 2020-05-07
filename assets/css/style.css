@@ -18,6 +18,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--titles);
+    color: var(--colorKey);
 }
 
 h2 {
@@ -211,7 +212,7 @@ text-align: center;
 .clients h2 {
     margin-bottom: 40px;
 }
-.clients .imgLateral {
+.imgLateral {
     position: absolute;
     margin: -300px 0 0 0;
     right: -20px;
@@ -259,17 +260,198 @@ footer {
 
 
 /* PORTAFOLIO */
+.head {
+    height: 450px;
+    padding: 170px 0 0 0;
+    margin-top: -80px
+}
+.head p {
+    font-size: 25px;
+    letter-spacing: 4px;
+    line-height: 30px;
+}
+.head p span {
+    background-color: rgba(73, 242, 160, 0.89);
+}
+.portfolio {
+    
+    background: url(../img/ui/portfolio.png) no-repeat;
+    background-position: 80px 0;
+    
+}
+#project .fixedMenu, 
+#portafolio .fixedMenu{
+    position: relative !important;
+    margin-top: 0px !important;
+    animation-name: none !important;
+}
 .projectsGroup {
- clear: both;
- display: table;
+    margin: 0 auto;
+    clear: both;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 0%;
 }
 .itemProject {
-    width: 21%;
+    border-radius: 4px;
+}
+.itemProject .imgWrapper {
+    width: 25%;
+    max-height: 50vh;
     overflow: hidden;
     border-radius: 4px;
-    height: 100%;
     float: left;
-    margin: 10px;
-    max-width: 236px;
-    max-height: 427px;
+    z-index: -1;
+}
+.itemProject .infoWrapper{
+    float: left;
+    width: 60%;
+    padding: 30px 0 0 50px
+}
+.itemProject img {
+    transition: all .3s ease-in-out;
+    height: 100%;
+    margin-left:-80px;
+}
+.itemProject div {
+    color: var(--colorKey);
+}
+.itemProject .category {
+    margin: 0;
+    background-color: white;
+    padding: 0px 3px;
+    display: inline-block;
+    border-radius: 2px;
+    font-size: small;
+}
+.itemProject .infoWrapper h2{
+    font-size: 60px;
+    line-height: 50px;
+    font-family: var(--text)!important ;
+    margin: 0 0 10px 0;
+}
+
+.itemProject:hover img{
+    margin-left: 0;
+}
+.itemProject .infoWrapper ul {
+    padding: 0;
+}
+.itemProject .infoWrapper li {
+    display: inline-block;
+    margin: 5px;
+}
+
+
+/* Breadcrums */
+.breadcrums {
+    width: 100%;
+    font-size: 14px;
+}
+.breadcrums ul{
+    list-style: none;
+    text-align: right;
+}
+.breadcrums ul li{
+    display: inline-block;
+}
+.breadcrums ul li::before{
+    content: "-";
+    padding:0 8px 0 5px;
+    color: gray;
+}
+.breadcrums ul li:first-child::before{
+    content: "";
+}
+.breadcrums a {
+    color: gray;
+}
+.breadcrums a.actualPage {
+    color: var(--colorKey);
+    cursor: default;
+}
+/* Projects */
+.project.head {
+    height: auto;
+    padding: 100px 0 0 0;
+    margin-top: -80px
+}
+.project.head p {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 20px;
+}
+.project.head img {
+    width: 100%;
+}
+.project .tag{
+    font-size: 16px !important;
+    margin: 0px;
+}
+#project .explain {
+    width: 60%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.title {
+    color: #878787;
+    margin: 0;
+}
+.info {
+    color: var(--colorKey);
+    margin: 0 0 50px 0;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.disclaimer {
+    font-size: 14px;
+    color: #878787;
+    text-align: right;
+    width: 50%;
+    float: right;
+    margin-top: 50px;
+}
+
+/* Contacto */
+#contacto .info {
+    margin-bottom: 20px;
+}
+#contacto .imgLateral {
+    margin: -30px;
+    right: -20px;
+}
+
+form label{
+    letter-spacing: 1px;
+    line-height: 19px;
+    margin-bottom: 6px;
+
+}
+form input.form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-left: -1.7rem;
+}
+form div.form-check {
+    padding-left: 1.7rem;
+}
+form textarea.form-control,
+form input.form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-color: var(--colorKey);
+}
+form .form-control:focus {
+    box-shadow: none;
+}
+form textarea.form-control {
+    line-height: 1.1em;
+    margin-top: 10px;
+    display: block;
+    overflow: hidden;
+    transition: all .5s ease;
 }
