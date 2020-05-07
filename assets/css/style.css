@@ -229,6 +229,7 @@ text-align: center;
 .call .imgLateral {
     position: absolute;
     right: -20px;
+    margin: 0;
 }
 .call h2 {
     margin-top: 60px;
